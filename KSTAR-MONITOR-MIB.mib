@@ -1,0 +1,1598 @@
+
+--
+-- KSTAR-MONITOR-MIB.mib
+
+	 KSTAR-MONITOR-MIB DEFINITIONS ::= BEGIN
+ 
+		IMPORTS
+			enterprises, Integer32, OBJECT-TYPE, OBJECT-IDENTITY, NOTIFICATION-TYPE			
+				FROM SNMPv2-SMI			
+			DisplayString, DateAndTime, TEXTUAL-CONVENTION			
+				FROM SNMPv2-TC;
+		
+-- 
+-- Node definitions
+-- 
+    -- 1.3.6.1.4.1.51812
+		kstar OBJECT-IDENTITY
+			STATUS current
+			DESCRIPTION 
+				""
+			::= { enterprises 51812 }
+
+		monitor OBJECT-IDENTITY
+			STATUS current
+			DESCRIPTION 
+				""
+			::= { kstar 1 }
+		
+            
+        equip2 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 2 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 2 }
+
+
+        signal3 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 3 }
+
+
+        signal4 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 4 }
+
+
+        signal5 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 5 }
+
+
+        signal6 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 6 }
+
+
+        signal7 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 7 }
+
+
+        signal8 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 8 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip2 10001 }
+
+
+        equip3 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 3 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 2 }
+
+
+        signal3 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 3 }
+
+
+        signal4 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip3 4 }
+
+
+        signal5 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip3 5 }
+
+
+        signal6 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 6 }
+
+
+        signal7 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "℃"
+            ::= { equip3 7 }
+
+
+        signal8 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 8 }
+
+
+        signal9 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 9 }
+
+
+        signal10 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 10 }
+
+
+        signal11 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 11 }
+
+
+        signal12 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 12 }
+
+
+        signal13 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 13 }
+
+
+        signal14 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 14 }
+
+
+        signal15 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 15 }
+
+
+        signal16 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 16 }
+
+
+        signal17 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip3 17 }
+
+
+        signal20 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip3 20 }
+
+
+        signal21 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip3 21 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip3 10001 }
+
+
+        equip4 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 4 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "℃"
+            ::= { equip4 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "%Rh"
+            ::= { equip4 2 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip4 10001 }
+
+
+        equip5 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 5 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 2 }
+
+
+        signal3 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 3 }
+
+
+        signal4 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip5 4 }
+
+
+        signal5 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip5 5 }
+
+
+        signal6 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 6 }
+
+
+        signal7 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "℃"
+            ::= { equip5 7 }
+
+
+        signal8 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 8 }
+
+
+        signal9 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 9 }
+
+
+        signal10 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 10 }
+
+
+        signal11 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 11 }
+
+
+        signal12 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 12 }
+
+
+        signal13 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 13 }
+
+
+        signal14 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 14 }
+
+
+        signal15 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 15 }
+
+
+        signal16 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 16 }
+
+
+        signal17 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip5 17 }
+
+
+        signal20 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip5 20 }
+
+
+        signal21 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip5 21 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip5 10001 }
+
+
+        equip6 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 6 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "?"
+            ::= { equip6 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 2 }
+
+
+        signal3 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 3 }
+
+
+        signal4 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 4 }
+
+
+        signal5 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 5 }
+
+
+        signal6 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "?"
+            ::= { equip6 6 }
+
+
+        signal7 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "?"
+            ::= { equip6 7 }
+
+
+        signal8 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 8 }
+
+
+        signal9 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 9 }
+
+
+        signal10 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip6 10 }
+
+
+        signal11 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip6 11 }
+
+
+        signal12 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 12 }
+
+
+        signal13 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "var"
+            ::= { equip6 13 }
+
+
+        signal14 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip6 14 }
+
+
+        signal15 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 15 }
+
+
+        signal16 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 16 }
+
+
+        signal17 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip6 17 }
+
+
+        signal18 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip6 18 }
+
+
+        signal19 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 19 }
+
+
+        signal20 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "var"
+            ::= { equip6 20 }
+
+
+        signal21 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip6 21 }
+
+
+        signal22 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 22 }
+
+
+        signal23 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 23 }
+
+
+        signal24 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip6 24 }
+
+
+        signal25 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 25 }
+
+
+        signal26 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip6 26 }
+
+
+        signal27 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 27 }
+
+
+        signal28 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "var"
+            ::= { equip6 28 }
+
+
+        signal29 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip6 29 }
+
+
+        signal30 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 30 }
+
+
+        signal31 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip6 31 }
+
+
+        signal32 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip6 32 }
+
+
+        signal33 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip6 33 }
+
+
+        signal34 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "w"
+            ::= { equip6 34 }
+
+
+        signal35 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 35 }
+
+
+        signal36 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "var"
+            ::= { equip6 36 }
+
+
+        signal37 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip6 37 }
+
+
+        signal38 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "A"
+            ::= { equip6 38 }
+
+
+        signal39 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip6 39 }
+
+
+        signal40 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip6 40 }
+
+
+        signal41 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip6 41 }
+
+
+        signal42 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip6 42 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip6 10001 }
+
+
+        equip7 OBJECT-IDENTITY
+        STATUS current
+        DESCRIPTION 
+            ""
+        ::= { monitor 7 }
+
+
+        signal1 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 1 }
+
+
+        signal2 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 2 }
+
+
+        signal3 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 3 }
+
+
+        signal4 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 4 }
+
+
+        signal5 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 5 }
+
+
+        signal6 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 6 }
+
+
+        signal7 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 7 }
+
+
+        signal8 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 8 }
+
+
+        signal9 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 9 }
+
+
+        signal10 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 10 }
+
+
+        signal11 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 11 }
+
+
+        signal12 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 12 }
+
+
+        signal13 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 13 }
+
+
+        signal14 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 14 }
+
+
+        signal15 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 15 }
+
+
+        signal16 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 16 }
+
+
+        signal17 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 17 }
+
+
+        signal18 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 18 }
+
+
+        signal19 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 19 }
+
+
+        signal20 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 20 }
+
+
+        signal21 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 21 }
+
+
+        signal22 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 22 }
+
+
+        signal23 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 23 }
+
+
+        signal24 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 24 }
+
+
+        signal25 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 25 }
+
+
+        signal26 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "V"
+            ::= { equip7 26 }
+
+
+        signal27 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 27 }
+
+
+        signal28 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 28 }
+
+
+        signal29 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 29 }
+
+
+        signal30 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 30 }
+
+
+        signal31 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 31 }
+
+
+        signal32 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 32 }
+
+
+        signal33 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 33 }
+
+
+        signal34 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 34 }
+
+
+        signal35 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 35 }
+
+
+        signal36 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 36 }
+
+
+        signal37 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 37 }
+
+
+        signal38 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip7 38 }
+
+
+        signal39 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip7 39 }
+
+
+        signal40 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "W"
+            ::= { equip7 40 }
+
+
+        signal41 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Var"
+            ::= { equip7 41 }
+
+
+        signal42 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Var"
+            ::= { equip7 42 }
+
+
+        signal43 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Var"
+            ::= { equip7 43 }
+
+
+        signal44 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Var"
+            ::= { equip7 44 }
+
+
+        signal45 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip7 45 }
+
+
+        signal46 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip7 46 }
+
+
+        signal47 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip7 47 }
+
+
+        signal48 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "VA"
+            ::= { equip7 48 }
+
+
+        signal49 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 49 }
+
+
+        signal50 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 50 }
+
+
+        signal51 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 51 }
+
+
+        signal52 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 52 }
+
+
+        signal53 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Hz"
+            ::= { equip7 53 }
+
+
+        signal54 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip7 54 }
+
+
+        signal55 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip7 55 }
+
+
+        signal56 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip7 56 }
+
+
+        signal57 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "WH"
+            ::= { equip7 57 }
+
+
+        signal58 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 58 }
+
+
+        signal59 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 59 }
+
+
+        signal60 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 60 }
+
+
+        signal61 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 61 }
+
+
+        signal62 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Wh"
+            ::= { equip7 62 }
+
+
+        signal63 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Wh"
+            ::= { equip7 63 }
+
+
+        signal64 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Wh"
+            ::= { equip7 64 }
+
+
+        signal65 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Wh"
+            ::= { equip7 65 }
+
+
+        signal66 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 66 }
+
+
+        signal67 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 67 }
+
+
+        signal68 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 68 }
+
+
+        signal69 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                "Varh"
+            ::= { equip7 69 }
+
+
+        signal70 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 70 }
+
+
+        signal71 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 71 }
+
+
+        signal72 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 72 }
+
+
+        signal73 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 73 }
+
+
+        signal10001 OBJECT-TYPE
+            SYNTAX DisplayString
+            MAX-ACCESS read-only
+            STATUS current
+            DESCRIPTION
+                ""
+            ::= { equip7 10001 }
+
+
+   END
+
+--
+-- KSTAR-MONITOR-MIB.mib
+--
+           
